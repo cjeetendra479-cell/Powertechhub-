@@ -1,0 +1,188 @@
+/* Purane CSS ke niche ise paste karein ya naya banayein */
+* {
+    box-sizing: border-box; /* Layout kharab nahi hoga */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    line-height: 1.6;
+}
+
+/* Professional Fixed Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1a1a;
+    color: white;
+    padding: 1rem 5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00d4ff; /* Professional Cyan Blue */
+}
+
+/* Header Section */
+.portfolio-header {
+    padding: 150px 5% 80px; /* Padding for fixed nav */
+    background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 80px 5%;
+    background: #f9f9f9;
+}
+
+.portfolio-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 350px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+/* Hover Overlay - Real Professional Look */
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-overlay h3 {
+    color: #00d4ff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.portfolio-overlay p {
+    color: #eee;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-view {
+    padding: 10px 25px;
+    background: #00d4ff;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-view:hover {
+    background: white;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Powertechhub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Powertechhub</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="portfolio-header">
+        <h1>Our Professional Work</h1>
+        <p>Premium solutions delivered with precision and care.</p>
+    </header>
+
+    <section class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Work 1">
+            <div class="portfolio-overlay">
+                <h3>Corporate Branding</h3>
+                <p>High-end website for a global logistics firm.</p>
+                <a href="#" class="btn-view">Live Preview</a>
+            </div>
+        </div>
+        
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Work 2">
+            <div class="portfolio-overlay">
+                <h3>E-Commerce Engine</h3>
+                <p>Scalable online store with fast checkout.</p>
+                <a href="#" class="btn-view">Live Preview</a>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="project3.jpg" alt="Work 3">
+            <div class="portfolio-overlay">
+                <h3>Tech Blog Platform</h3>
+                <p>SEO optimized clean blog design.</p>
+                <a href="#" class="btn-view">Live Preview</a>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background:#1a1a1a; color:white; text-align:center; padding: 40px 0;">
+        <p>&copy; 2026 Powertechhub | Built for Excellence</p>
+    </footer>
+
+</body>
+</html>
