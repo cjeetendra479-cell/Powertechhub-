@@ -1,56 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PowerTechHub | Home</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body { background-color: #050505; color: white; font-family: sans-serif; scroll-behavior: smooth; }
-        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerTechHub - Premium Tech Solutions | +91 86194 36849</title>
+    <meta name="description" content="PowerTechHub - Web Development, Mobile Apps, Cyber Security | +91 86194 36849 | choudharyjeetendra53@gmail.com">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Anti-Copy & Security -->
+    <script>document.addEventListener('contextmenu',e=>e.preventDefault());document.addEventListener('keydown',e=>{if(e.keyCode==123||e.ctrlKey&&(e.keyCode==85||e.keyCode==83||e.keyCode==73)||e.ctrlKey&&e.shiftKey&&e.keyCode==73)e.preventDefault()});document.addEventListener('selectstart',e=>e.preventDefault());</script>
 </head>
-<body class="bg-slate-950">
-    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto sticky top-0 z-50 glass rounded-full mt-4 mx-4">
-        <div class="text-2xl font-bold text-blue-500 uppercase tracking-tighter">PowerTechHub</div>
-        <div class="hidden md:flex space-x-8 font-medium">
-            <a href="index.html" class="text-blue-400 font-bold underline underline-offset-8">Home</a>
-            <a href="about.html" class="hover:text-blue-400 transition text-slate-300">About</a>
-            <a href="services.html" class="hover:text-blue-400 transition text-slate-300">Services</a>
-            <a href="contact.html" class="hover:text-blue-400 transition text-slate-300">Contact</a>
+<body data-theme="light">
+    
+    <!-- Floating Buttons - YOUR NUMBER: 8619436849 -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/918619436849?text=Hi%20PowerTechHub%2C%20main%20aapke%20services%20ke%20baare%20me%20jaanna%20chahta%20hu%20%F0%9F%9A%80" class="fab whatsapp" target="_blank" title="WhatsApp Chat">
+            💬 WA
+        </a>
+        <a href="tel:+918619436849" class="fab phone" title="Direct Call">
+            📞 Call
+        </a>
+    </div>
+
+    <!-- Dark/Light Toggle -->
+    <div class="theme-toggle">
+        <input type="checkbox" id="themeSwitch">
+        <label for="themeSwitch">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </label>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>⚡ PowerTechHub</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <a href="https://wa.me/918619436849" class="bg-blue-600 px-6 py-2 rounded-full font-bold">WhatsApp</a>
     </nav>
 
-    <section class="text-center py-20 px-4">
-        <h1 class="text-6xl md:text-8xl font-black mb-6 italic text-blue-500 tracking-tighter">Built for Growth.</h1>
-        <div class="inline-flex items-center gap-2 bg-green-900/20 text-green-400 px-6 py-2 rounded-full border border-green-500/30 text-sm font-bold uppercase tracking-widest">99/100 Speed Score</div>
-    </section>
-
-    <section class="max-w-7xl mx-auto py-12 px-6">
-        <h2 class="text-center text-4xl font-bold mb-12">Our Premium Gallery</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass p-2 rounded-2xl border border-white/10 overflow-hidden"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500" class="rounded-xl w-full h-64 object-cover"></div>
-            <div class="glass p-2 rounded-2xl border border-white/10 overflow-hidden"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500" class="rounded-xl w-full h-64 object-cover"></div>
-            <div class="glass p-2 rounded-2xl border border-white/10 overflow-hidden"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500" class="rounded-xl w-full h-64 object-cover"></div>
-            <div class="glass p-2 rounded-2xl border border-white/10 overflow-hidden"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500" class="rounded-xl w-full h-64 object-cover"></div>
-            <div class="glass p-2 rounded-2xl border border-white/10 overflow-hidden"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500" class="rounded-xl w-full h-64 object-cover"></div>
-            <div class="glass p-2 rounded-2xl border border-white/10 overflow-hidden"><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=500" class="rounded-xl w-full h-64 object-cover"></div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🚀 Premium Tech Solutions</div>
+            <h1 class="hero-title">PowerTech<span>Hub</span></h1>
+            <p class="hero-subtitle">Next Generation Web, Mobile & AI Solutions</p>
+            <div class="hero-contact">
+                <div class="contact-highlight">
+                    📞 <a href="tel:+918619436849">+91 86194 36849</a>
+                </div>
+                <div class="contact-highlight">
+                    📧 <a href="mailto:choudharyjeetendra53@gmail.com">choudharyjeetendra53@gmail.com</a>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary btn-large">Get Free Quote</a>
+                <a href="https://wa.me/918619436849" class="btn btn-whatsapp" target="_blank">💬 WhatsApp</a>
+            </div>
+        </div>
+        <div class="hero-particles">
+            <span></span><span></span><span></span><span></span><span></span>
         </div>
     </section>
 
-    <section class="max-w-xl mx-auto py-20 px-6">
-        <div class="glass p-10 rounded-3xl border border-blue-500/20 text-center">
-            <h2 class="text-3xl font-bold mb-6 text-blue-400">Get a Free Quote</h2>
-            <form action="https://formspree.io/f/mreogagd" method="POST" class="space-y-4">
-                <input type="text" name="name" placeholder="Full Name" required class="w-full bg-black/40 border border-white/10 p-4 rounded-xl outline-none focus:border-blue-500 transition text-white">
-                <input type="email" name="email" placeholder="Email" required class="w-full bg-black/40 border border-white/10 p-4 rounded-xl outline-none focus:border-blue-500 transition text-white">
-                <textarea name="message" placeholder="Project Details" rows="3" required class="w-full bg-black/40 border border-white/10 p-4 rounded-xl outline-none focus:border-blue-500 transition text-white"></textarea>
-                <button type="submit" class="w-full bg-blue-600 py-4 rounded-xl font-bold hover:bg-blue-700 transition">Send Message</button>
-            </form>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>React, Next.js, Node.js - 100/100 Speed</p>
+                    <div class="service-price">₹15,000+</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Apps</h3>
+                    <p>React Native, Flutter - iOS & Android</p>
+                    <div class="service-price">₹25,000+</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Cyber Security</h3>
+                    <p>Anti-Copy, Protection, Penetration Testing</p>
+                    <div class="service-price">₹10,000+</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>DevOps</h3>
+                    <p>CI/CD, Cloud Deployment, Automation</p>
+                    <div class="service-price">₹20,000+</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="text-center py-10 text-slate-600 border-t border-white/5">&copy; 2026 PowerTechHub Agency.</footer>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Recent Projects</h2>
+            <div class="portfolio-grid">
+                <a href="#" class="portfolio-item">
+                    <div class="portfolio-overlay">
+                        <h3>E-Commerce Site</h3>
+                        <p>React + Node.js</p>
+                    </div>
+                </a>
+                <a href="#" class="portfolio-item">
+                    <div class="portfolio-overlay">
+                        <h3>Mobile Banking App</h3>
+                        <p>React Native</p>
+                    </div>
+                </a>
+                <a href="#" class="portfolio-item">
+                    <div class="portfolio-overlay">
+                        <h3>AI Dashboard</h3>
+                        <p>Next.js + Python</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start?</h2>
+            <p>Call Now: <a href="tel:+918619436849">+91 86194 36849</a></p>
+            <a href="#contact" class="btn btn-primary btn-xl">Start Project</a>
+        </div>
+    </section>
+
+    <!-- Contact Section - YOUR FORMSPREE ID ADDED -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info-card">
+                    <h3>📞 Quick Contact</h3>
+                    <div class="contact-item">
+                        <strong>Phone:</strong>
+                        <a href="tel:+918619436849">+91 86194 36849</a>
+                        <button onclick="callNow()">📞 Call Now</button>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:choudharyjeetendra53@gmail.com">choudharyjeetendra53@gmail.com</a>
+                        <button onclick="emailNow()">✉️ Email</button>
+                    </div>
+                    <div class="contact-item">
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/918619436849" target="_blank">Chat Now</a>
+                    </div>
+                </div>
+
+                <!-- FORMSPREE FORM - YOUR ID: mreogagd -->
+                <div class="contact-form-card">
+                    <h3>📝 Send Message</h3>
+                    <form action="https://formspree.io/f/mreogagd" method="POST">
+                        <input type="text" name="name" placeholder="Your Name *" required>
+                        <input type="email" name="email" placeholder="Your Email *" required>
+                        <input type="tel" name="phone" placeholder="Your Phone">
+                        <select name="service" required>
+                            <option value="">Select Service</option>
+                            <option value="web">Web Development</option>
+                            <option value="mobile">Mobile Apps</option>
+                            <option value="security">Cyber Security</option>
+                            <option value="devops">DevOps</option>
+                        </select>
+                        <textarea name="message" rows="5" placeholder="Project Details *" required></textarea>
+                        <input type="hidden" name="_subject" value="New Lead - PowerTechHub">
+                        <input type="hidden" name="_next" value="https://cjeetendra479-cell.github.io/Powertechhub-/thankyou.html">
+                        <button type="submit" class="submit-btn">🚀 Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>⚡ PowerTechHub</h3>
+                    <p>Premium Tech Solutions</p>
+                </div>
+                <div class="footer-contact">
+                    <a href="tel:+918619436849" class="footer-phone">📞 +91 86194 36849</a>
+                    <br>
+                    <a href="mailto:choudharyjeetendra53@gmail.com">📧 choudharyjeetendra53@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PowerTechHub | <strong>+91 86194 36849</strong> | Delhi, India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Anti-Copy Enhanced
+        document.addEventListener('dragstart',e=>e.preventDefault());
+        document.addEventListener('selectstart',e=>e.preventDefault());
+        
+        // Theme Toggle
+        const themeSwitch=document.getElementById('themeSwitch');
+        themeSwitch.addEventListener('change',()=>{document.body.dataset.theme=themeSwitch.checked?'dark':'light';localStorage.setItem('theme',themeSwitch.checked?'dark':'light')});
+        if(localStorage.getItem('theme')==='dark')themeSwitch.checked=true;
+        
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){e.preventDefault();document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'})})});
+        
+        // Navbar Scroll
+        window.addEventListener('scroll',()=>{document.querySelector('.navbar').classList.toggle('sticky',window.scrollY>100)});
+        
+        // Contact Functions
+        function callNow(){window.location.href='tel:+918619436849'}
+        function emailNow(){window.location.href='mailto:choudharyjeetendra53@gmail.com?subject=Project%20Inquiry'}
+        
+        // Mobile Menu
+        document.querySelector('.hamburger').addEventListener('click',()=>{document.querySelector('.nav-menu').classList.toggle('active')});
+        
+        // Form Submit Success
+        document.querySelector('form').addEventListener('submit',function(){this.innerHTML='<div style="text-align:center;padding:2rem"><h3>✅ Message Sent!</h3><p>We will contact you within 30 minutes.</p><a href="#home" class="btn">Back to Home</a></div>'});
+    </script>
 </body>
 </html>
-
