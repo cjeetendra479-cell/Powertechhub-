@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PowerTechHub - Premium Tech Solutions | +91 86194 36849</title>
-    <meta name="description" content="PowerTechHub - Web Development, Mobile Apps, Cyber Security | +91 86194 36849 | choudharyjeetendra53@gmail.com">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>PowerTechHub - Premium Web, Mobile & AI Solutions</title>
+    <meta name="description" content="PowerTechHub - Web Development, Mobile Apps, Cyber Security, DevOps & AI Solutions. Contact +91 86194 36849 | choudharyjeetendra53@gmail.com">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="robots" content="index, follow">
+
+    <!-- IMPORTANT:
+         If your CSS file name is style.css then change index.css to style.css
+    -->
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- Anti-Copy & Security -->
-    <script>document.addEventListener('contextmenu',e=>e.preventDefault());document.addEventListener('keydown',e=>{if(e.keyCode==123||e.ctrlKey&&(e.keyCode==85||e.keyCode==83||e.keyCode==73)||e.ctrlKey&&e.shiftKey&&e.keyCode==73)e.preventDefault()});document.addEventListener('selectstart',e=>e.preventDefault());</script>
 </head>
 <body data-theme="light">
-    
-    <!-- Floating Buttons - YOUR NUMBER: 8619436849 -->
+
+    <!-- Floating Buttons -->
     <div class="floating-buttons">
-        <a href="https://wa.me/918619436849?text=Hi%20PowerTechHub%2C%20main%20aapke%20services%20ke%20baare%20me%20jaanna%20chahta%20hu%20%F0%9F%9A%80" class="fab whatsapp" target="_blank" title="WhatsApp Chat">
+        <a href="https://wa.me/918619436849?text=Hi%20PowerTechHub%2C%20main%20aapke%20services%20ke%20baare%20me%20jaanna%20chahta%20hu%20%F0%9F%9A%80"
+           class="fab whatsapp"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="WhatsApp Chat">
             💬 WA
         </a>
+
         <a href="tel:+918619436849" class="fab phone" title="Direct Call">
             📞 Call
         </a>
     </div>
 
-    <!-- Dark/Light Toggle -->
+    <!-- Theme Toggle -->
     <div class="theme-toggle">
-        <input type="checkbox" id="themeSwitch">
+        <input type="checkbox" id="themeSwitch" aria-label="Toggle theme">
         <label for="themeSwitch">
             <span class="sun">☀️</span>
             <span class="moon">🌙</span>
@@ -38,18 +50,20 @@
             <div class="logo">
                 <h2>⚡ PowerTechHub</h2>
             </div>
-            <ul class="nav-menu">
+
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger">
+
+            <button class="hamburger" id="hamburger" aria-label="Open Menu" type="button">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -58,7 +72,8 @@
         <div class="hero-content">
             <div class="hero-badge">🚀 Premium Tech Solutions</div>
             <h1 class="hero-title">PowerTech<span>Hub</span></h1>
-            <p class="hero-subtitle">Next Generation Web, Mobile & AI Solutions</p>
+            <p class="hero-subtitle">Next Generation Web, Mobile, AI & Security Solutions</p>
+
             <div class="hero-contact">
                 <div class="contact-highlight">
                     📞 <a href="tel:+918619436849">+91 86194 36849</a>
@@ -67,67 +82,93 @@
                     📧 <a href="mailto:choudharyjeetendra53@gmail.com">choudharyjeetendra53@gmail.com</a>
                 </div>
             </div>
+
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary btn-large">Get Free Quote</a>
-                <a href="https://wa.me/918619436849" class="btn btn-whatsapp" target="_blank">💬 WhatsApp</a>
+                <a href="https://wa.me/918619436849" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <strong>Fast</strong>
+                    <span>Modern Websites</span>
+                </div>
+                <div class="stat-box">
+                    <strong>Secure</strong>
+                    <span>Protection & Testing</span>
+                </div>
+                <div class="stat-box">
+                    <strong>Scalable</strong>
+                    <span>Business Solutions</span>
+                </div>
             </div>
         </div>
+
         <div class="hero-particles">
             <span></span><span></span><span></span><span></span><span></span>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services -->
     <section id="services" class="services">
         <div class="container">
             <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Premium digital solutions for startups, creators and businesses.</p>
+
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">💻</div>
                     <h3>Web Development</h3>
-                    <p>React, Next.js, Node.js - 100/100 Speed</p>
-                    <div class="service-price">₹15,000+</div>
+                    <p>Landing pages, business websites, React, Next.js and custom web apps.</p>
+                    <div class="service-price">Starting ₹15,000</div>
                 </div>
+
                 <div class="service-card">
                     <div class="service-icon">📱</div>
                     <h3>Mobile Apps</h3>
-                    <p>React Native, Flutter - iOS & Android</p>
-                    <div class="service-price">₹25,000+</div>
+                    <p>Android & iOS apps with React Native and Flutter for faster launch.</p>
+                    <div class="service-price">Starting ₹25,000</div>
                 </div>
+
                 <div class="service-card">
                     <div class="service-icon">🔒</div>
                     <h3>Cyber Security</h3>
-                    <p>Anti-Copy, Protection, Penetration Testing</p>
-                    <div class="service-price">₹10,000+</div>
+                    <p>Website protection, basic audits, anti-copy setup and penetration testing.</p>
+                    <div class="service-price">Starting ₹10,000</div>
                 </div>
+
                 <div class="service-card">
                     <div class="service-icon">⚙️</div>
                     <h3>DevOps</h3>
-                    <p>CI/CD, Cloud Deployment, Automation</p>
-                    <div class="service-price">₹20,000+</div>
+                    <p>Deployment, CI/CD, server setup, hosting automation and cloud workflow.</p>
+                    <div class="service-price">Starting ₹20,000</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="section-title">Recent Projects</h2>
+            <p class="section-subtitle">Some example solution categories we can build for you.</p>
+
             <div class="portfolio-grid">
-                <a href="#" class="portfolio-item">
+                <a href="#contact" class="portfolio-item">
                     <div class="portfolio-overlay">
                         <h3>E-Commerce Site</h3>
                         <p>React + Node.js</p>
                     </div>
                 </a>
-                <a href="#" class="portfolio-item">
+
+                <a href="#contact" class="portfolio-item">
                     <div class="portfolio-overlay">
                         <h3>Mobile Banking App</h3>
                         <p>React Native</p>
                     </div>
                 </a>
-                <a href="#" class="portfolio-item">
+
+                <a href="#contact" class="portfolio-item">
                     <div class="portfolio-overlay">
                         <h3>AI Dashboard</h3>
                         <p>Next.js + Python</p>
@@ -137,57 +178,116 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Pricing Plans</h2>
+            <p class="section-subtitle">Simple starting packages. Final price depends on features and project scope.</p>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="pricing-price">₹15K+</div>
+                    <ul>
+                        <li>1 Business Website</li>
+                        <li>Mobile Responsive Design</li>
+                        <li>Fast Loading Pages</li>
+                        <li>Basic SEO Setup</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Choose Plan</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <h3>Business</h3>
+                    <div class="pricing-price">₹25K+</div>
+                    <ul>
+                        <li>Advanced Website / App UI</li>
+                        <li>Contact Form Integration</li>
+                        <li>WhatsApp & Call Buttons</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Choose Plan</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Premium</h3>
+                    <div class="pricing-price">Custom</div>
+                    <ul>
+                        <li>Custom Web App / Mobile App</li>
+                        <li>Security & Deployment Setup</li>
+                        <li>AI / Automation Integration</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Start?</h2>
+            <h2>Ready to Start Your Project?</h2>
             <p>Call Now: <a href="tel:+918619436849">+91 86194 36849</a></p>
             <a href="#contact" class="btn btn-primary btn-xl">Start Project</a>
         </div>
     </section>
 
-    <!-- Contact Section - YOUR FORMSPREE ID ADDED -->
+    <!-- Contact -->
     <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title">Contact Me</h2>
+
             <div class="contact-container">
                 <!-- Contact Info -->
                 <div class="contact-info-card">
                     <h3>📞 Quick Contact</h3>
+
                     <div class="contact-item">
                         <strong>Phone:</strong>
                         <a href="tel:+918619436849">+91 86194 36849</a>
-                        <button onclick="callNow()">📞 Call Now</button>
                     </div>
+
                     <div class="contact-item">
                         <strong>Email:</strong>
                         <a href="mailto:choudharyjeetendra53@gmail.com">choudharyjeetendra53@gmail.com</a>
-                        <button onclick="emailNow()">✉️ Email</button>
                     </div>
+
                     <div class="contact-item">
                         <strong>WhatsApp:</strong>
-                        <a href="https://wa.me/918619436849" target="_blank">Chat Now</a>
+                        <a href="https://wa.me/918619436849" target="_blank" rel="noopener noreferrer">Chat Now</a>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a href="tel:+918619436849" class="btn btn-primary">📞 Call Now</a>
+                        <a href="mailto:choudharyjeetendra53@gmail.com?subject=Project%20Inquiry" class="btn btn-secondary">✉️ Email</a>
                     </div>
                 </div>
 
-                <!-- FORMSPREE FORM - YOUR ID: mreogagd -->
+                <!-- Formspree Form -->
                 <div class="contact-form-card">
                     <h3>📝 Send Message</h3>
-                    <form action="https://formspree.io/f/mreogagd" method="POST">
+
+                    <form id="contactForm" action="https://formspree.io/f/mreogagd" method="POST">
                         <input type="text" name="name" placeholder="Your Name *" required>
                         <input type="email" name="email" placeholder="Your Email *" required>
-                        <input type="tel" name="phone" placeholder="Your Phone">
+                        <input type="tel" name="phone" placeholder="Your Phone Number">
+                        
                         <select name="service" required>
                             <option value="">Select Service</option>
-                            <option value="web">Web Development</option>
-                            <option value="mobile">Mobile Apps</option>
-                            <option value="security">Cyber Security</option>
-                            <option value="devops">DevOps</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="Mobile Apps">Mobile Apps</option>
+                            <option value="Cyber Security">Cyber Security</option>
+                            <option value="DevOps">DevOps</option>
                         </select>
+
                         <textarea name="message" rows="5" placeholder="Project Details *" required></textarea>
+
                         <input type="hidden" name="_subject" value="New Lead - PowerTechHub">
-                        <input type="hidden" name="_next" value="https://cjeetendra479-cell.github.io/Powertechhub-/thankyou.html">
-                        <button type="submit" class="submit-btn">🚀 Send Message</button>
+                        
+                        <button type="submit" class="submit-btn" id="submitBtn">🚀 Send Message</button>
+                        <p id="formStatus" class="form-status"></p>
                     </form>
                 </div>
             </div>
@@ -202,43 +302,115 @@
                     <h3>⚡ PowerTechHub</h3>
                     <p>Premium Tech Solutions</p>
                 </div>
+
                 <div class="footer-contact">
                     <a href="tel:+918619436849" class="footer-phone">📞 +91 86194 36849</a>
                     <br>
                     <a href="mailto:choudharyjeetendra53@gmail.com">📧 choudharyjeetendra53@gmail.com</a>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 PowerTechHub | <strong>+91 86194 36849</strong> | Delhi, India</p>
+                <p>&copy; <span id="currentYear"></span> PowerTechHub | Delhi, India</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Anti-Copy Enhanced
-        document.addEventListener('dragstart',e=>e.preventDefault());
-        document.addEventListener('selectstart',e=>e.preventDefault());
-        
-        // Theme Toggle
-        const themeSwitch=document.getElementById('themeSwitch');
-        themeSwitch.addEventListener('change',()=>{document.body.dataset.theme=themeSwitch.checked?'dark':'light';localStorage.setItem('theme',themeSwitch.checked?'dark':'light')});
-        if(localStorage.getItem('theme')==='dark')themeSwitch.checked=true;
-        
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){e.preventDefault();document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'})})});
-        
-        // Navbar Scroll
-        window.addEventListener('scroll',()=>{document.querySelector('.navbar').classList.toggle('sticky',window.scrollY>100)});
-        
-        // Contact Functions
-        function callNow(){window.location.href='tel:+918619436849'}
-        function emailNow(){window.location.href='mailto:choudharyjeetendra53@gmail.com?subject=Project%20Inquiry'}
-        
-        // Mobile Menu
-        document.querySelector('.hamburger').addEventListener('click',()=>{document.querySelector('.nav-menu').classList.toggle('active')});
-        
-        // Form Submit Success
-        document.querySelector('form').addEventListener('submit',function(){this.innerHTML='<div style="text-align:center;padding:2rem"><h3>✅ Message Sent!</h3><p>We will contact you within 30 minutes.</p><a href="#home" class="btn">Back to Home</a></div>'});
+        // Theme setup
+        const body = document.body;
+        const themeSwitch = document.getElementById('themeSwitch');
+        const savedTheme = localStorage.getItem('theme');
+
+        if (savedTheme === 'dark') {
+            body.dataset.theme = 'dark';
+            themeSwitch.checked = true;
+        } else {
+            body.dataset.theme = 'light';
+            themeSwitch.checked = false;
+        }
+
+        themeSwitch.addEventListener('change', () => {
+            const theme = themeSwitch.checked ? 'dark' : 'light';
+            body.dataset.theme = theme;
+            localStorage.setItem('theme', theme);
+        });
+
+        // Sticky navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (navbar) {
+                navbar.classList.toggle('sticky', window.scrollY > 80);
+            }
+        });
+
+        // Mobile menu
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+        }
+
+        // Smooth scroll with safety check
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetSelector = this.getAttribute('href');
+                const target = document.querySelector(targetSelector);
+
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+
+                    if (navMenu) navMenu.classList.remove('active');
+                    if (hamburger) hamburger.classList.remove('active');
+                }
+            });
+        });
+
+        // Footer year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Formspree AJAX submit
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('formStatus');
+        const submitBtn = document.getElementById('submitBtn');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+                formStatus.textContent = '';
+
+                try {
+                    const response = await fetch(contactForm.action, {
+                        method: 'POST',
+                        body: new FormData(contactForm),
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        formStatus.textContent = '✅ Message sent successfully! Hum jaldi contact karenge.';
+                        contactForm.reset();
+                    } else {
+                        formStatus.textContent = '❌ Message send nahi hua. Please dubara try karo.';
+                    }
+                } catch (error) {
+                    formStatus.textContent = '❌ Network issue. Please WhatsApp ya Call karo.';
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = '🚀 Send Message';
+                }
+            });
+        }
     </script>
 </body>
-</html>
+    </html>
+    
