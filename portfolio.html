@@ -3,207 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Portfolio | Powertechhub</title>
+    <title>Our Portfolio | PowerTechHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background-color: #f4f7f6;
-            color: #333;
-        }
-
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #1a1a1a;
-            padding: 1rem 5%;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
-        }
-
-        nav .logo {
-            color: #00d4ff;
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 15px;
-            transition: 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #00d4ff;
-        }
-
-        /* Header */
-        .header {
-            height: 40vh;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            margin-top: 60px;
-        }
-
-        .header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        .header p { font-size: 1.1rem; color: #ccc; }
-
-        /* Portfolio Grid */
-        .container {
-            max-width: 1200px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            position: relative;
-            border-radius: 15px;
-            overflow: hidden;
-            height: 350px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            cursor: pointer;
-        }
-
-        .card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: 0.5s;
-        }
-
-        .card:hover img {
-            transform: scale(1.1);
-        }
-
-        /* Overlay Effect */
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 212, 255, 0.85); /* Professional Blue Tint */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: 0.5s;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-
-        .card:hover .overlay {
-            opacity: 1;
-        }
-
-        .overlay h3 { margin-bottom: 10px; font-size: 1.5rem; }
-        .overlay p { font-size: 0.9rem; margin-bottom: 15px; }
-
-        .btn {
-            padding: 8px 20px;
-            background: white;
-            color: #1a1a1a;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            font-size: 14px;
-        }
-
-        /* Footer */
-        footer {
-            background: #1a1a1a;
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-            margin-top: 50px;
-        }
+        body { background-color: #050505; color: white; font-family: sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .project-card:hover { transform: translateY(-10px); transition: all 0.3s ease; border-color: rgba(59, 130, 246, 0.5); }
     </style>
 </head>
-<body>
-
-    <nav>
-        <div class="logo">Powertechhub</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+<body class="bg-slate-950">
+    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto sticky top-0 z-50 glass rounded-full mt-4 mx-4">
+        <div class="text-2xl font-bold text-blue-500 uppercase tracking-tighter">PowerTechHub</div>
+        <div class="hidden md:flex space-x-6 font-medium">
+            <a href="index.html" class="hover:text-blue-400 transition text-slate-300 text-xs uppercase tracking-widest">Home</a>
+            <a href="about.html" class="hover:text-blue-400 transition text-slate-300 text-xs uppercase tracking-widest">About</a>
+            <a href="services.html" class="hover:text-blue-400 transition text-slate-300 text-xs uppercase tracking-widest">Services</a>
+            <a href="portfolio.html" class="text-blue-400 font-bold underline underline-offset-8 text-xs uppercase tracking-widest">Portfolio</a>
+            <a href="pricing.html" class="hover:text-blue-400 transition text-slate-300 text-xs uppercase tracking-widest">Pricing</a>
+            <a href="contact.html" class="hover:text-blue-400 transition text-slate-300 text-xs uppercase tracking-widest">Contact</a>
+        </div>
+        <a href="https://wa.me/918619436849" class="bg-blue-600 px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition">WhatsApp</a>
     </nav>
 
-    <div class="header">
-        <h1>Our Masterpieces</h1>
-        <p>Innovation and Excellence in every pixel.</p>
-    </div>
+    <section class="text-center py-20 px-4">
+        <h1 class="text-5xl md:text-7xl font-black mb-4 italic text-blue-500 tracking-tighter uppercase">Our Masterpieces</h1>
+        <p class="text-slate-400 max-w-2xl mx-auto uppercase tracking-widest text-sm font-bold">Showcasing our best digital creations and success stories</p>
+    </section>
 
-    <div class="container">
-        <div class="portfolio-grid">
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=60" alt="Project 1">
-                <div class="overlay">
-                    <h3>Digital Marketing</h3>
-                    <p>Advanced SEO and Growth Strategy for global brands.</p>
-                    <a href="#" class="btn">View Project</a>
+    <section class="max-w-7xl mx-auto py-12 px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="glass p-4 rounded-3xl project-card border border-white/5">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" class="rounded-2xl w-full h-56 object-cover mb-6">
+                <h3 class="text-xl font-bold text-blue-400 mb-2">E-Commerce Platform</h3>
+                <p class="text-slate-400 text-sm mb-4 leading-relaxed">A fully functional online store with secure payment gateways and inventory management.</p>
+                <div class="flex gap-2">
+                    <span class="text-[10px] bg-blue-900/30 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20 font-bold">UI/UX</span>
+                    <span class="text-[10px] bg-blue-900/30 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20 font-bold">DEVELOPMENT</span>
                 </div>
             </div>
 
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&w=500&q=60" alt="Project 2">
-                <div class="overlay">
-                    <h3>Fintech App</h3>
-                    <p>Secure and fast payment gateway integration.</p>
-                    <a href="#" class="btn">View Project</a>
+            <div class="glass p-4 rounded-3xl project-card border border-white/5">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600" class="rounded-2xl w-full h-56 object-cover mb-6">
+                <h3 class="text-xl font-bold text-blue-400 mb-2">Corporate Branding</h3>
+                <p class="text-slate-400 text-sm mb-4 leading-relaxed">Modern identity and web presence for a global consulting firm to boost digital authority.</p>
+                <div class="flex gap-2">
+                    <span class="text-[10px] bg-blue-900/30 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20 font-bold">BRANDING</span>
+                    <span class="text-[10px] bg-blue-900/30 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20 font-bold">DESIGN</span>
                 </div>
             </div>
 
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=500&q=60" alt="Project 3">
-                <div class="overlay">
-                    <h3>Web UI Design</h3>
-                    <p>Minimalist and user-friendly interface design.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Powertechhub | Designed for Growth</p>
-    </footer>
-
-</body>
-</html>
+            <div class="glass p-4 rounded-3xl project-card border border-white/5">
+                <img src="
+                    
